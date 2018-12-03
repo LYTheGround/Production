@@ -5,11 +5,11 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">HOME</div>
+                    <div class="card-header">Dashboard</div>
 
                     <div class="card-body">
 
-                        You are Not logged in!
+                        You are logged in! in dashboard
                     </div>
                 </div>
             </div>

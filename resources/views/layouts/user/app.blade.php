@@ -44,7 +44,7 @@
 </head>
 <body>
 <div class="main-wrapper">
-    @include('layouts.navbar')
+    @include('layouts.user.navbar')
     @include('layouts.user.sidebar')
     <div class="page-wrapper">
         @if (session('status'))
@@ -53,7 +53,6 @@
             </div>
         @endif
         @yield('content')
-        @include('layouts.msg')
     </div>
 </div>
 
