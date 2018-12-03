@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
+    dd(\Carbon\Carbon::now());
     return view('welcome');
 });
