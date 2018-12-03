@@ -13,12 +13,10 @@ class User extends Authenticatable
     /**
      * The attributes that are mass assignable.
      *
-     * Cette Table consiste uniquement a se connecter.
-     *
      * @var array
      */
     protected $fillable = [
-        'login', 'password', 'updated_at'
+        'name', 'email', 'password',
     ];
 
     /**
@@ -29,20 +27,4 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
-    public function admins()
-    {
-        return $this->hasMany(Admin::class);
-    }
-
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasOne
-     */
-    public function member()
-    {
-        return $this->hasOne(Member::class);
-    }
 }
