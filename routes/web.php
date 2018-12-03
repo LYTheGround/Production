@@ -12,6 +12,9 @@
 */
 
 Route::get('/', function () {
-    dd(\Carbon\Carbon::now());
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
